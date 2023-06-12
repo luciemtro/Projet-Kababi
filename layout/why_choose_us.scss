@@ -1,0 +1,253 @@
+main {
+  .why_choose_us {
+    width: 100%;
+
+    position: relative;
+    .circle_food {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateY(-20%) translateX(-50%);
+      border-radius: 50%;
+      border: solid 30px $white;
+      width: 40vw;
+    }
+    .images_top_choose_us {
+      width: 100%;
+      min-height: 300px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10% 7% 0 10%;
+      img {
+        z-index: 1;
+      }
+    }
+  }
+  .about_us {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+    padding: 13% 0 0% 0%;
+    margin-bottom: 4rem;
+    .title_about_us {
+      width: 100%;
+      text-align: center;
+      position: relative;
+      h2 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 100;
+        letter-spacing: -2px;
+      }
+      p {
+        padding-top: 20px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+      }
+    }
+    .icon_about_absolute {
+      position: absolute;
+      width: 10vw;
+      top: 20%;
+      right: 20%;
+    }
+    .about_us_absolute {
+      position: absolute;
+      left: 2%;
+      top: 10%;
+      font-size: 10vw;
+      color: $mediumcreme;
+      z-index: -1;
+      text-transform: uppercase;
+    }
+    .contenu_about_us {
+      width: 45%;
+      display: flex;
+      img {
+        display: block;
+        max-height: 600px;
+        max-width: 60%;
+      }
+      .text_about_us {
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: justify;
+        text-align: center;
+        p {
+          font-size: 1.5rem;
+          line-height: 3rem;
+          margin-bottom: 60px;
+        }
+        .btn_about_us {
+          font-family: "Kanit", sans-serif;
+          font-size: 1.1rem;
+          word-spacing: 0.3rem;
+          font-weight: 500;
+          color: $white;
+          background-color: $or;
+          padding: 20px 30px;
+          border: none;
+          border-radius: 5px;
+          &:hover {
+            cursor: pointer;
+            background-color: #dbb975;
+            color: $white;
+          }
+          i {
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1760px) {
+  main .about_us .contenu_about_us {
+    width: 80%;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .why_choose_us {
+    .images_top_choose_us {
+      img {
+        width: 230px;
+      }
+    }
+    .about_us {
+      .about_us_absolute {
+        font-size: 7rem;
+      }
+      .title_about_us {
+        h2 {
+          font-size: 2rem;
+          margin-top: 100px;
+        }
+      }
+    }
+  }
+  .icon_about_absolute {
+    top: 0;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .why_choose_us {
+    .images_top_choose_us {
+      img {
+        width: 200px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .why_choose_us {
+    .images_top_choose_us {
+      img {
+        width: 180px;
+      }
+    }
+    .about_us {
+      .about_us_absolute {
+        font-size: 7rem;
+      }
+      .title_about_us {
+        h2 {
+          font-size: 3rem;
+          margin-top: 100px;
+        }
+        .icon_about_absolute {
+          top: 0;
+          right: 0;
+        }
+      }
+      .contenu_about_us {
+        flex-direction: column;
+        align-items: center;
+        .text_about_us {
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main {
+    .why_choose_us {
+      .circle_food {
+        top: -20px;
+        height: 300px;
+        width: 300px;
+      }
+      .images_top_choose_us {
+        height: 550px;
+        gap: 20px;
+        flex-direction: column;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 10% 0 0 0;
+        img {
+          width: 200px;
+        }
+      }
+    }
+    .about_us {
+      gap: 6rem;
+      padding: 5% 0 0% 0%;
+      margin-bottom: 3rem;
+      .title_about_us {
+        h2 {
+          font-size: 2.5rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+      }
+      .icon_about_absolute {
+        width: 15vw;
+        right: 10%;
+      }
+      .about_us_absolute {
+        font-size: 5vw;
+      }
+      .contenu_about_us {
+        .text_about_us {
+          p {
+            margin-bottom: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  main {
+    .why_choose_us {
+      .images_top_choose_us {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .why_choose_us {
+    .images_top_choose_us {
+      img {
+        width: 100px;
+      }
+    }
+  }
+}

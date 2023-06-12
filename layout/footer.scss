@@ -1,0 +1,252 @@
+// Footer style
+footer {
+  color: rgb(138, 138, 138);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./img/footer/img-ng-footer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  gap: 10rem;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+
+.footer-title {
+  margin-top: 5rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.footer-link {
+  width: 13.66%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  h3 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    li {
+      display: flex;
+      gap: 0.5rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+      i {
+        color: #c8a96a;
+      }
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+.footer-link-input {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  p {
+    font-size: 1.5rem;
+  }
+  h3 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+  }
+  .email-input {
+    display: flex;
+    width: 100%;
+    max-height: 62px;
+    input {
+      font-size: 1.2rem;
+      padding: 1rem;
+      height: 3rem;
+      width: 70%;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+    }
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      border: none;
+      height: 100%;
+      width: 14%;
+      background-color: #9e8553;
+      border: none;
+      &:hover {
+        cursor: pointer;
+        background-color: $or;
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding-top: 5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.253);
+  font-size: 1.3rem;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 80%;
+    margin: auto;
+    height: 6rem;
+    width: 6rem;
+  }
+  p {
+    a {
+      text-decoration: none;
+      color: #c8a96a;
+    }
+  }
+
+  .footer-socials {
+    display: flex;
+    gap: 2rem;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      padding: 0.5rem;
+      border-radius: 50%;
+      background-color: rgb(138, 138, 138);
+      font-size: 1rem;
+      color: #b3b3b3;
+      &:hover {
+        color: white;
+        background-color: #c8a96a;
+      }
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .footer-title {
+    margin-top: 3rem;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    p {
+      margin-top: 2rem;
+    }
+  }
+  .footer-socials {
+    margin-bottom: 3.5rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .footer-links {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    row-gap: 5rem;
+    column-gap: 1rem;
+  }
+  .footer-link {
+    width: 100%;
+    display: grid;
+    flex-direction: column;
+    text-align: start;
+  }
+
+  .footer-link-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  footer {
+    gap: 5rem;
+  }
+  .footer-links {
+    display: grid;
+    row-gap: 5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-link {
+    ul {
+      li {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .footer-link-input {
+    .email-input {
+      input {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .footer-links {
+    text-align: center;
+    grid-template-columns: 50% 50%;
+    column-gap: 2rem;
+    row-gap: 3rem;
+  }
+  .footer-link-input {
+    text-align: start;
+    p {
+      font-size: 1.2rem;
+    }
+    input {
+      height: auto;
+    }
+  }
+  .footer-link {
+    ul {
+      text-align: start;
+      gap: 0.2rem;
+      li {
+        i {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .contact {
+    text-align: center;
+    ul {
+      li {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.1rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+}

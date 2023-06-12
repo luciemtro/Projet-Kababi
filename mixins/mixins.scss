@@ -1,0 +1,35 @@
+@mixin displayCenterRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin displayCenterRowNoJustify {
+  display: flex;
+  align-items: center;
+}
+@mixin displayCenterRowNoAlign {
+  display: flex;
+  justify-content: center;
+}
+@mixin displayCenterColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@mixin displayCenterColumnNoJustify {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin displayCenterBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Necessary for the nav display
+@mixin fixDisplayNav($display) {
+  display: $display;
+}

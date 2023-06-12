@@ -1,0 +1,101 @@
+.restaurant-photos-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 6rem 0rem;
+
+  button {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    background-color: $white;
+    font-weight: bold;
+    border: 1px solid rgba(199, 199, 199, 0.452);
+    border-radius: 0.3rem;
+    word-spacing: 0.2rem;
+    &:hover {
+      cursor: pointer;
+      color: white;
+      background-color: $or;
+    }
+  }
+  .p-low {
+    position: absolute;
+    color: $creme;
+    left: 0;
+    top: -50%;
+    font-size: 15vw;
+    z-index: -1;
+  }
+}
+
+.restaurant-photos-title {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  h2 {
+    font-weight: 500;
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+}
+.resto-photos {
+  width: 80%;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 1.5rem;
+  column-gap: 1.5rem;
+  img {
+    width: 100%;
+    max-height: 350px;
+  }
+}
+
+.photos-together {
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 48%;
+  }
+}
+
+@media (max-width: 900px) {
+  .resto-photos {
+    margin-top: auto;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+  }
+  .restaurant-photos-title {
+    h2 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .resto-photos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    img {
+      max-height: 246.34px;
+    }
+  }
+  .photos-together {
+    img {
+      width: 49%;
+    }
+  }
+}
+
